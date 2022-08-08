@@ -9,8 +9,10 @@ namespace ListGradebook
         {
             List<string> students = new List<string>();
             List<double> grades = new List<double>();
+            List<string> planets = new List<string>();
             string newStudent;
             string input;
+            string[] planetsArray = planets.ToArray();
 
             Console.WriteLine("Enter your students (or ENTER to finish):");
 
@@ -48,6 +50,15 @@ namespace ListGradebook
 
             double avg = sum / students.Count;
             Console.WriteLine("Average grade: " + avg);
+
+            planets.Add("Mercury");
+            planets.Add("Venus");
+            planets.Add("Earth");
+            planets.Add("Mars");
+            planets.Add("Jupiter");
+            planets.Add("Saturn");
+            planets.Add("Uranus");
+            planets.Add("Neptune");
         }
     }
 }
